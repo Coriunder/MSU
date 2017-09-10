@@ -1,0 +1,2184 @@
+{
+  "signupurl": "YOURDOMAIN",
+  "postendpoint": "/v2/Merchant.svc/Register",
+  "inputprefix": "msu",
+  "inputidpart": "id",
+  "inputtitlepart": "title",
+  "inputdescpart": "desc",
+  "inputvalpart": "val",
+  "fname": {
+    "id": "fname",
+    "validate": true
+  },
+  "lname": {
+    "id": "lname",
+    "validate": true
+  },
+  "email": {
+    "id": "email",
+    "validate": true
+  },
+  "phone": {
+    "id": "phone",
+    "validate": true
+  },
+  "fax": {
+    "id": "fax",
+    "validate": false
+  },
+  "address": {
+    "id": "address",
+    "validate": false
+  },
+  "city": {
+    "id": "city",
+    "validate": false
+  },
+  "state": {
+    "id": "state",
+    "validate": false
+  },
+  "zipcode": {
+    "id": "zipcode",
+    "validate": false
+  },
+  "legalbusinessname": {
+    "id": "legalbusinessname",
+    "validate": true
+  },
+  "legalbusinessnumber": {
+    "id": "legalbusinessnumber",
+    "validate": false
+  },
+  "businessdesc": {
+    "id": "businessdesc",
+    "validate": true
+  },
+  "businessstartdate": {
+    "id": "businessstartdate",
+    "validate": false
+  },
+  "dbaname": {
+    "id": "dbaname",
+    "validate": false
+  },
+  "ownerdob": {
+    "id": "ownerdob",
+    "validate": false
+  },
+  "ownerssn": {
+    "id": "ownerssn",
+    "validate": false
+  },
+  "websiteurl": {
+    "id": "websiteurl",
+    "validate": true
+  },
+  "stateofincorporation": {
+    "id": "stateofincorporation",
+    "validate": false
+  },
+  "typeofbusiness": {
+    "id": "typeofbusiness",
+    "validate": false
+  },
+  "businessindustry": {
+    "id": "businessindustry",
+    "validate": false
+  },
+  "paddress": {
+    "id": "paddress",
+    "validate": false
+  },
+  "pcity": {
+    "id": "pcity",
+    "validate": false
+  },
+  "pstate": {
+    "id": "pstate",
+    "validate": false
+  },
+  "pzipcode": {
+    "id": "pzipcode",
+    "validate": false
+  },
+  "bankaccnumber": {
+    "id": "bankaccnumber",
+    "validate": false
+  },
+  "bankroutingnumber": {
+    "id": "bankroutingnumber",
+    "validate": false
+  },
+  "canceledchequeimage": {
+    "id": "canceledchequeimage",
+    "validate": false
+  },
+  "anticipatedmonthlyvolume": {
+    "id": "anticipatedmonthlyvolume",
+    "validate": false
+  },
+  "anticipatedavgtransamount": {
+    "id": "anticipatedavgtransamount",
+    "validate": false
+  },
+  "anticipatedlargesttransamount": {
+    "id": "anticipatedlargesttransamount",
+    "validate": false
+  },
+  "percentdelivery0to7": {
+    "id": "percentdelivery0to7",
+    "validate": false
+  },
+  "percentdelivery8to14": {
+    "id": "percentdelivery8to14",
+    "validate": false
+  },
+  "percentdelivery15to20": {
+    "id": "percentdelivery15to20",
+    "validate": false
+  },
+  "percentdeliveryover30": {
+    "id": "percentdeliveryover30",
+    "validate": false
+  },
+  "assets": [
+    {
+      "lang": "en",
+      "fname": {
+        "title": "First Name",
+        "desc": "Enter your first name",
+        "val": "Input first name is empty or invalid"
+      },
+      "lname": {
+        "title": "Last Name",
+        "desc": "Enter your last name",
+        "val": "Input last name is empty or invalid"
+      },
+      "email": {
+        "title": "Email",
+        "desc": "Enter your email address",
+        "val": "Input email address is empty or invalid"
+      },
+      "phone": {
+        "title": "Phone number",
+        "desc": "Enter your phone number",
+        "val": "Input phone number is empty or invalid"
+      },
+      "fax": {
+        "title": "Fax number",
+        "desc": "Enter your fax number",
+        "val": "Input fax number is empty or invalid"
+      },
+      "address": {
+        "title": "Address",
+        "desc": "Enter your address",
+        "val": "Input address is empty or invalid"
+      },
+      "city": {
+        "title": "City",
+        "desc": "Enter your city",
+        "val": "Input city is empty or invalid"
+      },
+      "state": {
+        "title": "State",
+        "desc": "Enter your state",
+        "val": "Input state is empty or invalid"
+      },
+      "zipcode": {
+        "title": "Zipcode",
+        "desc": "Enter your zipcode",
+        "val": "Input zipcode is empty or invalid"
+      },
+      "legalbusinessname": {
+        "title": "Legal Business Name",
+        "desc": "Enter your legal business name",
+        "val": "Input legal business name is empty or invalid"
+      },
+      "legalbusinessnumber": {
+        "title": "Legal Business Number",
+        "desc": "Enter your legal business number",
+        "val": "Input legal business number is empty or invalid"
+      },
+      "businessdesc": {
+        "title": "Business Description",
+        "desc": "Enter your business description",
+        "val": "Input business description is empty or invalid"
+      },
+      "businessstartdate": {
+        "title": "Business Start date",
+        "desc": "Enter your business start date",
+        "val": "Input business start date is empty or invalid"
+      },
+      "dbaname": {
+        "title": "DBA name",
+        "desc": "Enter your Doing Business As name - meaning the name of the brand your company is using.",
+        "val": "Input DBA name is empty or invalid"
+      },
+      "ownerdob": {
+        "title": "Owner DOB",
+        "desc": "Enter the date of birth for the owner of the company",
+        "val": "Input owner DOB is empty or invalid"
+      },
+      "ownerssn": {
+        "title": "Owner SSN",
+        "desc": "Enter the Social Security Number for the owner of the company, you may enter the ID or Passport number instead",
+        "val": "Input owner SSN is empty or invalid"
+      },
+      "websiteurl": {
+        "title": "Business Website",
+        "desc": "Enter the URL for your company's website - its important for us to see the activities of your company",
+        "val": "Input business website is empty or invalid"
+      },
+      "stateofincorporation": {
+        "title": "State/Country of incorporation",
+        "desc": "Enter the state or country of incorporation for your business - this will give us the tools to decide how to proceed with your application.",
+        "val": "Input state of incorporation is empty or invalid"
+      },
+      "typeofbusiness": {
+        "title": "Type of business",
+        "desc": "Choose the type of business your company was registered as.",
+        "val": "Input type of business is empty or invalid"
+      },
+      "businessindustry": {
+        "title": "Business Industry",
+        "desc": "Choose the industry your current activities fall under - if you cant find the exact industry choose the closest one",
+        "val": "Input business industry is empty or invalid"
+      },
+      "paddress": {
+        "title": "Business address",
+        "desc": "Enter the address for your business, the location of your main offices",
+        "val": "Input physical address is empty or invalid"
+      },
+      "pcity": {
+        "title": "Business address city",
+        "desc": "Enter the city where your business is located, the location of your main offices",
+        "val": "Input physical city is empty or invalid"
+      },
+      "pstate": {
+        "title": "Business state/Country",
+        "desc": "Enter the state/Country where your business is located, the location of your main offices",
+        "val": "Input physical state is empty or invalid"
+      },
+      "pzipcode": {
+        "title": "Physical zipcode",
+        "desc": "Enter the zipcode for your business, the location of your main offices",
+        "val": "Input physical zipcode is empty or invalid"
+      },
+      "bankaccnumber": {
+        "title": "Bank account number",
+        "desc": "Enter your bank account number - the account you wish us to pay to",
+        "val": "Input bank account number is empty or invalid"
+      },
+      "bankroutingnumber": {
+        "title": "Bank Routing number",
+        "desc": "Enter your bank routing number - for the account you wish us to pay to",
+        "val": "Input routing number is empty or invalid"
+      },
+      "canceledchequeimage": {
+        "title": "Cancelled cheque image",
+        "desc": "Enter your cancelled cheque image",
+        "val": "Input cancelled cheque image is empty or invalid"
+      },
+      "anticipatedmonthlyvolume": {
+        "title": "Anticipated monthly volume",
+        "desc": "Enter your anticipated monthly volume",
+        "val": "Input anticipated monthly volume is empty or invalid"
+      },
+      "anticipatedavgtransamount": {
+        "title": "Anticipated Average Transaction Amount",
+        "desc": "Enter your anticipated average transaction amount",
+        "val": "Input anticipated average transaction amount is empty or invalid"
+      },
+      "anticipatedlargesttransamount": {
+        "title": "Anticipated Largest Transaction Amount",
+        "desc": "Enter your anticipated largest transaction amount",
+        "val": "Input anticipated largest transcation amount is empty or invalid"
+      },
+      "percentdelivery0to7": {
+        "title": "Percent delivery 0 to 7",
+        "desc": "Enter the precentage of goods that will be delivered within a 7 days",
+        "val": "Input percent delivery 0 to 7 is empty or invalid"
+      },
+      "percentdelivery8to14": {
+        "title": "Percent delivery 8 to 14",
+        "desc": "Enter the precentage of goods that will be delivered within 8-14 days",
+        "val": "Input delivery 8 to 14 is empty or invalid"
+      },
+      "percentdelivery15to20": {
+        "title": "Percent delivery 15 to 30",
+        "desc": "Enter the precentage of goods that will be delivered within 15-30 days",
+        "val": "Input deliver 15 to 30 is empty or invalid"
+      },
+      "percentdeliveryover30": {
+        "title": "Percent delivery over 30",
+        "desc": "Enter the precentage of goods that will be delivered over 30 days",
+        "val": "Input delivery over 30 is empty or invalid"
+      },
+      "tobopts": [
+        {
+          "id": 7,
+          "title": "Association"
+        },
+        {
+          "id": 3,
+          "title": "Corporation"
+        },
+        {
+          "id": 8,
+          "title": "Estate/Trust"
+        },
+        {
+          "id": 10,
+          "title": "Government"
+        },
+        {
+          "id": 4,
+          "title": "LLC"
+        },
+        {
+          "id": 5,
+          "title": "LP"
+        },
+        {
+          "id": 21,
+          "title": "Non Profit Org"
+        },
+        {
+          "id": 6,
+          "title": "Other"
+        },
+        {
+          "id": 2,
+          "title": "Partnership"
+        },
+        {
+          "id": 13,
+          "title": "Private Corporation"
+        },
+        {
+          "id": 12,
+          "title": "Public Corporation"
+        },
+        {
+          "id": 11,
+          "title": "Tax Exempt"
+        },
+        {
+          "id": 22,
+          "title": "School"
+        },
+        {
+          "id": 1,
+          "title": "Sole Proprietor"
+        }
+      ],
+      "indopts": [
+        {
+          "id": 100,
+          "title": "Agricultural Production-Crops"
+        },
+        {
+          "id": 200,
+          "title": "Agricultural Prod-Livestock & Animal Specialties"
+        },
+        {
+          "id": 700,
+          "title": "Agricultural Services"
+        },
+        {
+          "id": 800,
+          "title": "Forestry"
+        },
+        {
+          "id": 900,
+          "title": "Fishing, Hunting and Trapping"
+        },
+        {
+          "id": 1000,
+          "title": "Metal Mining"
+        },
+        {
+          "id": 1040,
+          "title": "Gold and Silver Ores"
+        },
+        {
+          "id": 1090,
+          "title": "Miscellaneous Metal Ores"
+        },
+        {
+          "id": 1220,
+          "title": "Bituminous Coal & Lignite Mining"
+        },
+        {
+          "id": 1221,
+          "title": "Bituminous Coal & Lignite Surface Mining"
+        },
+        {
+          "id": 1311,
+          "title": "Crude Petroleum & Natural Gas"
+        },
+        {
+          "id": 1381,
+          "title": "Drilling Oil & Gas Wells"
+        },
+        {
+          "id": 1382,
+          "title": "Oil & Gas Field Exploration Services"
+        },
+        {
+          "id": 1389,
+          "title": "Oil & Gas Field Services, NEC"
+        },
+        {
+          "id": 1400,
+          "title": "Mining & Quarrying of Nonmetallic Minerals (No Fuels)"
+        },
+        {
+          "id": 1520,
+          "title": "General Bldg Contractors - Residential Bldgs"
+        },
+        {
+          "id": 1531,
+          "title": "Operative Builders"
+        },
+        {
+          "id": 1540,
+          "title": "General Bldg Contractors - Nonresidential Bldgs"
+        },
+        {
+          "id": 1600,
+          "title": "Heavy Construction Other Than Bldg Const - Contractors"
+        },
+        {
+          "id": 1623,
+          "title": "Water, Sewer, Pipeline, Comm & Power Line Construction"
+        },
+        {
+          "id": 1700,
+          "title": "Construction - Special Trade Contractors"
+        },
+        {
+          "id": 1731,
+          "title": "Electrical Work"
+        },
+        {
+          "id": 2000,
+          "title": "Food and Kindred Products"
+        },
+        {
+          "id": 2011,
+          "title": "Meat Packing Plants"
+        },
+        {
+          "id": 2013,
+          "title": "Sausages & Other Prepared Meat Products"
+        },
+        {
+          "id": 2015,
+          "title": "Poultry Slaughtering and Processing"
+        },
+        {
+          "id": 2020,
+          "title": "Dairy Products"
+        },
+        {
+          "id": 2024,
+          "title": "Ice Cream & Frozen Desserts"
+        },
+        {
+          "id": 2030,
+          "title": "Canned, Frozen & Preserved Fruit, Veg & Food Specialties"
+        },
+        {
+          "id": 2033,
+          "title": "Canned, Fruits, Veg, Preserves, Jams & Jellies"
+        },
+        {
+          "id": 2040,
+          "title": "Grain Mill Products"
+        },
+        {
+          "id": 2050,
+          "title": "Bakery Products"
+        },
+        {
+          "id": 2052,
+          "title": "Cookies & Crackers"
+        },
+        {
+          "id": 2060,
+          "title": "Sugar & Confectionery Products"
+        },
+        {
+          "id": 2070,
+          "title": "Fats & Oils"
+        },
+        {
+          "id": 2080,
+          "title": "Beverages"
+        },
+        {
+          "id": 2082,
+          "title": "Malt Beverages"
+        },
+        {
+          "id": 2086,
+          "title": "Bottled & Canned Soft Drinks & Carbonated Waters"
+        },
+        {
+          "id": 2090,
+          "title": "Miscellaneous Food Preparations & Kindred Products"
+        },
+        {
+          "id": 2092,
+          "title": "Prepared Fresh or Frozen Fish & Seafood"
+        },
+        {
+          "id": 2100,
+          "title": "Tobacco Products"
+        },
+        {
+          "id": 2111,
+          "title": "Cigarettes"
+        },
+        {
+          "id": 2200,
+          "title": "Textile Mill Products"
+        },
+        {
+          "id": 2211,
+          "title": "Broadwoven Fabric Mills, Cotton"
+        },
+        {
+          "id": 2221,
+          "title": "Broadwoven Fabric Mills, Man Made Fiber & Silk"
+        },
+        {
+          "id": 2250,
+          "title": "Knitting Mills"
+        },
+        {
+          "id": 2253,
+          "title": "Knit Outerwear Mills"
+        },
+        {
+          "id": 2273,
+          "title": "Carpets & Rugs"
+        },
+        {
+          "id": 2300,
+          "title": "Apparel & Other Finished Prods of Fabrics & Similar Matl"
+        },
+        {
+          "id": 2320,
+          "title": "Men's & Boys' Furnishings, Work Clothing, & Allied Garments"
+        },
+        {
+          "id": 2330,
+          "title": "Women's, Misses', and Juniors Outerwear"
+        },
+        {
+          "id": 2340,
+          "title": "Women's, Misses', Children's & Infant's Undergarments"
+        },
+        {
+          "id": 2390,
+          "title": "Miscellaneous Fabricated Textile Products"
+        },
+        {
+          "id": 2400,
+          "title": "Lumber & Wood Products (No Furniture)"
+        },
+        {
+          "id": 2421,
+          "title": "Sawmills & Planing Mills, General"
+        },
+        {
+          "id": 2430,
+          "title": "Millwood, Veneer, Plywood, & Structural Wood Members"
+        },
+        {
+          "id": 2451,
+          "title": "Mobile Homes"
+        },
+        {
+          "id": 2452,
+          "title": "Prefabricated Wood Bldgs & Components"
+        },
+        {
+          "id": 2510,
+          "title": "Household Furniture"
+        },
+        {
+          "id": 2511,
+          "title": "Wood Household Furniture, (No Upholstered)"
+        },
+        {
+          "id": 2520,
+          "title": "Office Furniture"
+        },
+        {
+          "id": 2522,
+          "title": "Office Furniture (No Wood)"
+        },
+        {
+          "id": 2531,
+          "title": "Public Bldg & Related Furniture"
+        },
+        {
+          "id": 2540,
+          "title": "Partitions, Shelvg, Lockers, & office & Store Fixtures"
+        },
+        {
+          "id": 2590,
+          "title": "Miscellaneous Furniture & Fixtures"
+        },
+        {
+          "id": 2600,
+          "title": "Papers & Allied Products"
+        },
+        {
+          "id": 2611,
+          "title": "Pulp Mills"
+        },
+        {
+          "id": 2621,
+          "title": "Paper Mills"
+        },
+        {
+          "id": 2631,
+          "title": "Paperboard Mills"
+        },
+        {
+          "id": 2650,
+          "title": "Paperboard Containers & Boxes"
+        },
+        {
+          "id": 2670,
+          "title": "Converted Paper & Paperboard Prods (No Containers/Boxes)"
+        },
+        {
+          "id": 2673,
+          "title": "Plastics, Foil & Coated Paper Bags"
+        },
+        {
+          "id": 2711,
+          "title": "Newspapers: Publishing or Publishing & Printing"
+        },
+        {
+          "id": 2721,
+          "title": "Periodicals: Publishing or Publishing & Printing"
+        },
+        {
+          "id": 2731,
+          "title": "Books: Publishing or Publishing & Printing"
+        },
+        {
+          "id": 2732,
+          "title": "Book Printing"
+        },
+        {
+          "id": 2741,
+          "title": "Miscellaneous Publishing"
+        },
+        {
+          "id": 2750,
+          "title": "Commercial Printing"
+        },
+        {
+          "id": 2761,
+          "title": "Manifold Business Forms"
+        },
+        {
+          "id": 2771,
+          "title": "Greeting Cards"
+        },
+        {
+          "id": 2780,
+          "title": "Blankbooks, Looseleaf Binders & Bookbinding & Related Work"
+        },
+        {
+          "id": 2790,
+          "title": "Service Industries For The Printing Trade"
+        },
+        {
+          "id": 2800,
+          "title": "Chemicals & Allied Products"
+        },
+        {
+          "id": 2810,
+          "title": "Industrial Inorganic Chemicals"
+        },
+        {
+          "id": 2820,
+          "title": "Plastic Material, Synth Resin/Rubber, Cellulos (No Glass)"
+        },
+        {
+          "id": 2821,
+          "title": "Plastic Materials, Synth Resins & Nonvulcan Elastomers"
+        },
+        {
+          "id": 2833,
+          "title": "Medicinal Chemicals & Botanical Products"
+        },
+        {
+          "id": 2834,
+          "title": "Pharmaceutical Preparations"
+        },
+        {
+          "id": 2835,
+          "title": "In Vitro & In Vivo Diagnostic Substances"
+        },
+        {
+          "id": 2836,
+          "title": "Biological Products, (No Diagnostic Substances)"
+        },
+        {
+          "id": 2840,
+          "title": "Soap, Detergents, Cleaning Preparations, Perfumes, Cosmetics"
+        },
+        {
+          "id": 2842,
+          "title": "Specialty Cleaning, Polishing and Sanitation Preparations"
+        },
+        {
+          "id": 2844,
+          "title": "Perfumes, Cosmetics & Other Toilet Preparations"
+        },
+        {
+          "id": 2851,
+          "title": "Paints, Varnishes, Lacquers, Enamels & Allied Prods"
+        },
+        {
+          "id": 2860,
+          "title": "Industrial Organic Chemicals"
+        },
+        {
+          "id": 2870,
+          "title": "Agricultural Chemicals"
+        },
+        {
+          "id": 2890,
+          "title": "Miscellaneous Chemical Products"
+        },
+        {
+          "id": 2891,
+          "title": "Adhesives & Sealants"
+        },
+        {
+          "id": 2911,
+          "title": "Petroleum Refining"
+        },
+        {
+          "id": 2950,
+          "title": "Asphalt Paving & Roofing Materials"
+        },
+        {
+          "id": 2990,
+          "title": "Miscellaneous Products of Petroleum & Coal"
+        },
+        {
+          "id": 3011,
+          "title": "Tires & Inner Tubes"
+        },
+        {
+          "id": 3021,
+          "title": "Rubber & Plastics Footwear"
+        },
+        {
+          "id": 3050,
+          "title": "Gaskets, Packg & Sealg Devices & Rubber & Plastics Hose"
+        },
+        {
+          "id": 3060,
+          "title": "Fabricated Rubber Products, NEC"
+        },
+        {
+          "id": 3080,
+          "title": "Miscellaneous Plastics Products"
+        },
+        {
+          "id": 3081,
+          "title": "Unsupported Plastics Film & Sheet"
+        },
+        {
+          "id": 3086,
+          "title": "Plastics Foam Products"
+        },
+        {
+          "id": 3089,
+          "title": "Plastics Products, NEC"
+        },
+        {
+          "id": 3100,
+          "title": "Leather & Leather Products"
+        },
+        {
+          "id": 3140,
+          "title": "Footwear, (No Rubber)"
+        },
+        {
+          "id": 3211,
+          "title": "Flat Glass"
+        },
+        {
+          "id": 3220,
+          "title": "Glass & Glassware, Pressed or Blown"
+        },
+        {
+          "id": 3221,
+          "title": "Glass Containers"
+        },
+        {
+          "id": 3231,
+          "title": "Glass Products, Made of Purchased Glass"
+        },
+        {
+          "id": 3241,
+          "title": "Cement, Hydraulic"
+        },
+        {
+          "id": 3250,
+          "title": "Structural Clay Products"
+        },
+        {
+          "id": 3260,
+          "title": "Pottery & Related Products"
+        },
+        {
+          "id": 3270,
+          "title": "Concrete, Gypsum & Plaster Products"
+        },
+        {
+          "id": 3272,
+          "title": "Concrete Products, Except Block & Brick"
+        },
+        {
+          "id": 3281,
+          "title": "Cut Stone & Stone Products"
+        },
+        {
+          "id": 3290,
+          "title": "Abrasive, Asbestos & Misc Nonmetallic Mineral Prods"
+        },
+        {
+          "id": 3310,
+          "title": "Steel Works, Blast Furnaces & Rolling & Finishing Mills"
+        },
+        {
+          "id": 3312,
+          "title": "Steel Works, Blast Furnaces & Rolling Mills (Coke Ovens)"
+        },
+        {
+          "id": 3317,
+          "title": "Steel Pipe & Tubes"
+        },
+        {
+          "id": 3320,
+          "title": "Iron & Steel Foundries"
+        },
+        {
+          "id": 3330,
+          "title": "Primary Smelting & Refining of Nonferrous Metals"
+        },
+        {
+          "id": 3334,
+          "title": "Primary Production of Aluminum"
+        },
+        {
+          "id": 3341,
+          "title": "Secondary Smelting & Refining of Nonferrous Metals"
+        },
+        {
+          "id": 3350,
+          "title": "Rolling Drawing & Extruding of Nonferrous Metals"
+        },
+        {
+          "id": 3357,
+          "title": "Drawing & Insulating of Nonferrous Wire"
+        },
+        {
+          "id": 3360,
+          "title": "Nonferrous Foundries (Castings)"
+        },
+        {
+          "id": 3390,
+          "title": "Miscellaneous Primary Metal Products"
+        },
+        {
+          "id": 3411,
+          "title": "Metal Cans"
+        },
+        {
+          "id": 3412,
+          "title": "Metal Shipping Barrels, Drums, Kegs & Pails"
+        },
+        {
+          "id": 3420,
+          "title": "Cutlery, Handtools & General Hardware"
+        },
+        {
+          "id": 3430,
+          "title": "Heating Equip, Except Elec & Warm Air; & Plumbing Fixtures"
+        },
+        {
+          "id": 3433,
+          "title": "Heating Equipment, Except Electric & Warm Air Furnaces"
+        },
+        {
+          "id": 3440,
+          "title": "Fabricated Structural Metal Products"
+        },
+        {
+          "id": 3442,
+          "title": "Metal Doors, Sash, Frames, Moldings & Trim"
+        },
+        {
+          "id": 3443,
+          "title": "Fabricated Plate Work (Boiler Shops)"
+        },
+        {
+          "id": 3444,
+          "title": "Sheet Metal Work"
+        },
+        {
+          "id": 3448,
+          "title": "Prefabricated Metal Buildings & Components"
+        },
+        {
+          "id": 3451,
+          "title": "Screw Machine Products"
+        },
+        {
+          "id": 3452,
+          "title": "Bolts, Nuts, Screws, Rivets & Washers"
+        },
+        {
+          "id": 3460,
+          "title": "Metal Forgings & Stampings"
+        },
+        {
+          "id": 3470,
+          "title": "Coating, Engraving & Allied Services"
+        },
+        {
+          "id": 3480,
+          "title": "Ordnance & Accessories, (No Vehicles/Guided Missiles)"
+        },
+        {
+          "id": 3490,
+          "title": "Miscellaneous Fabricated Metal Products"
+        },
+        {
+          "id": 3510,
+          "title": "Engines & Turbines"
+        },
+        {
+          "id": 3523,
+          "title": "Farm Machinery & Equipment"
+        },
+        {
+          "id": 3524,
+          "title": "Lawn & Garden Tractors & Home Lawn & Gardens Equip"
+        },
+        {
+          "id": 3530,
+          "title": "Construction, Mining & Materials Handling Machinery & Equip"
+        },
+        {
+          "id": 3531,
+          "title": "Construction Machinery & Equip"
+        },
+        {
+          "id": 3532,
+          "title": "Mining Machinery & Equip (No Oil & Gas Field Mach & Equip)"
+        },
+        {
+          "id": 3533,
+          "title": "Oil & Gas Field Machinery & Equipment"
+        },
+        {
+          "id": 3537,
+          "title": "Industrial Trucks, Tractors, Trailers & Stackers"
+        },
+        {
+          "id": 3540,
+          "title": "Metalworkg Machinery & Equipment"
+        },
+        {
+          "id": 3541,
+          "title": "Machine Tools, Metal Cutting Types"
+        },
+        {
+          "id": 3550,
+          "title": "Special Industry Machinery (No Metalworking Machinery)"
+        },
+        {
+          "id": 3555,
+          "title": "Printing Trades Machinery & Equipment"
+        },
+        {
+          "id": 3559,
+          "title": "Special Industry Machinery, NEC"
+        },
+        {
+          "id": 3560,
+          "title": "General Industrial Machinery & Equipment"
+        },
+        {
+          "id": 3561,
+          "title": "Pumps & Pumping Equipment"
+        },
+        {
+          "id": 3562,
+          "title": "Ball & Roller Bearings"
+        },
+        {
+          "id": 3564,
+          "title": "Industrial & Commercial Fans & Blowers & Air Purifying Equip"
+        },
+        {
+          "id": 3567,
+          "title": "Industrial Process Furnaces & Ovens"
+        },
+        {
+          "id": 3569,
+          "title": "General Industrial Machinery & Equipment, NEC"
+        },
+        {
+          "id": 3570,
+          "title": "Computer & office Equipment"
+        },
+        {
+          "id": 3571,
+          "title": "Electronic Computers"
+        },
+        {
+          "id": 3572,
+          "title": "Computer Storage Devices"
+        },
+        {
+          "id": 3575,
+          "title": "Computer Terminals"
+        },
+        {
+          "id": 3576,
+          "title": "Computer Communications Equipment"
+        },
+        {
+          "id": 3577,
+          "title": "Computer Peripheral Equipment, NEC"
+        },
+        {
+          "id": 3578,
+          "title": "Calculating & Accounting Machines (No Electronic Computers)"
+        },
+        {
+          "id": 3579,
+          "title": "Office Machines, NEC"
+        },
+        {
+          "id": 3580,
+          "title": "Refrigeration & Service Industry Machinery"
+        },
+        {
+          "id": 3585,
+          "title": "Air-Cond & Warm Air Heatg Equip & Comm & Indl Refrig Equip"
+        },
+        {
+          "id": 3590,
+          "title": "Misc Industrial & Commercial Machinery & Equipment"
+        },
+        {
+          "id": 3600,
+          "title": "Electronic & Other Electrical Equipment (No Computer Equip)"
+        },
+        {
+          "id": 3612,
+          "title": "Power, Distribution & Specialty Transformers"
+        },
+        {
+          "id": 3613,
+          "title": "Switchgear & Switchboard Apparatus"
+        },
+        {
+          "id": 3620,
+          "title": "Electrical Industrial Apparatus"
+        },
+        {
+          "id": 3621,
+          "title": "Motors & Generators"
+        },
+        {
+          "id": 3630,
+          "title": "Household Appliances"
+        },
+        {
+          "id": 3634,
+          "title": "Electric Housewares & Fans"
+        },
+        {
+          "id": 3640,
+          "title": "Electric Lighting & Wiring Equipment"
+        },
+        {
+          "id": 3651,
+          "title": "Household Audio & Video Equipment"
+        },
+        {
+          "id": 3652,
+          "title": "Phonograph Records & Prerecorded Audio Tapes & Disks"
+        },
+        {
+          "id": 3661,
+          "title": "Telephone & Telegraph Apparatus"
+        },
+        {
+          "id": 3663,
+          "title": "Radio & TV Broadcasting & Communications Equipment"
+        },
+        {
+          "id": 3669,
+          "title": "Communications Equipment, NEC"
+        },
+        {
+          "id": 3670,
+          "title": "Electronic Components & Accessories"
+        },
+        {
+          "id": 3672,
+          "title": "Printed Circuit Boards"
+        },
+        {
+          "id": 3674,
+          "title": "Semiconductors & Related Devices"
+        },
+        {
+          "id": 3677,
+          "title": "Electronic Coils, Transformers & Other Inductors"
+        },
+        {
+          "id": 3678,
+          "title": "Electronic Connectors"
+        },
+        {
+          "id": 3679,
+          "title": "Electronic Components, NEC"
+        },
+        {
+          "id": 3690,
+          "title": "Miscellaneous Electrical Machinery, Equipment & Supplies"
+        },
+        {
+          "id": 3695,
+          "title": "Magnetic & Optical Recording Media"
+        },
+        {
+          "id": 3711,
+          "title": "Motor Vehicles & Passenger Car Bodies"
+        },
+        {
+          "id": 3713,
+          "title": "Truck & Bus Bodies"
+        },
+        {
+          "id": 3714,
+          "title": "Motor Vehicle Parts & Accessories"
+        },
+        {
+          "id": 3715,
+          "title": "Truck Trailers"
+        },
+        {
+          "id": 3716,
+          "title": "Motor Homes"
+        },
+        {
+          "id": 3720,
+          "title": "Aircraft & Parts"
+        },
+        {
+          "id": 3721,
+          "title": "Aircraft"
+        },
+        {
+          "id": 3724,
+          "title": "Aircraft Engines & Engine Parts"
+        },
+        {
+          "id": 3728,
+          "title": "Aircraft Parts & Auxiliary Equipment, NEC"
+        },
+        {
+          "id": 3730,
+          "title": "Ship & Boat Building & Repairing"
+        },
+        {
+          "id": 3743,
+          "title": "Railroad Equipment"
+        },
+        {
+          "id": 3751,
+          "title": "Motorcycles, Bicycles & Parts"
+        },
+        {
+          "id": 3760,
+          "title": "Guided Missiles & Space Vehicles & Parts"
+        },
+        {
+          "id": 3790,
+          "title": "Miscellaneous Transportation Equipment"
+        },
+        {
+          "id": 3812,
+          "title": "Search, Detection, Navigation, Guidance, Aeronautical Sys"
+        },
+        {
+          "id": 3821,
+          "title": "Laboratory Apparatus & Furniture"
+        },
+        {
+          "id": 3822,
+          "title": "Auto Controls For Regulating Residential & Comml Environments"
+        },
+        {
+          "id": 3823,
+          "title": "Industrial Instruments For Measurement, Display, and Control"
+        },
+        {
+          "id": 3824,
+          "title": "Totalizing Fluid Meters & Counting Devices"
+        },
+        {
+          "id": 3825,
+          "title": "Instruments For Meas & Testing of Electricity & Elec Signals"
+        },
+        {
+          "id": 3826,
+          "title": "Laboratory Analytical Instruments"
+        },
+        {
+          "id": 3827,
+          "title": "Optical Instruments & Lenses"
+        },
+        {
+          "id": 3829,
+          "title": "Measuring & Controlling Devices, NEC"
+        },
+        {
+          "id": 3841,
+          "title": "Surgical & Medical Instruments & Apparatus"
+        },
+        {
+          "id": 3842,
+          "title": "Orthopedic, Prosthetic & Surgical Appliances & Supplies"
+        },
+        {
+          "id": 3843,
+          "title": "Dental Equipment & Supplies"
+        },
+        {
+          "id": 3844,
+          "title": "X-Ray Apparatus & Tubes & Related Irradiation Apparatus"
+        },
+        {
+          "id": 3845,
+          "title": "Electromedical & Electrotherapeutic Apparatus"
+        },
+        {
+          "id": 3851,
+          "title": "Ophthalmic Goods"
+        },
+        {
+          "id": 3861,
+          "title": "Photographic Equipment & Supplies"
+        },
+        {
+          "id": 3873,
+          "title": "Watches, Clocks, Clockwork Operated Devices/Parts"
+        },
+        {
+          "id": 3910,
+          "title": "Jewelry, Silverware & Plated Ware"
+        },
+        {
+          "id": 3911,
+          "title": "Jewelry, Precious Metal"
+        },
+        {
+          "id": 3931,
+          "title": "Musical Instruments"
+        },
+        {
+          "id": 3942,
+          "title": "Dolls & Stuffed Toys"
+        },
+        {
+          "id": 3944,
+          "title": "Games, Toys & Children's Vehicles (No Dolls & Bicycles)"
+        },
+        {
+          "id": 3949,
+          "title": "Sporting & Athletic Goods, NEC"
+        },
+        {
+          "id": 3950,
+          "title": "Pens, Pencils & Other Artists' Materials"
+        },
+        {
+          "id": 3960,
+          "title": "Costume Jewelry & Novelties"
+        },
+        {
+          "id": 3990,
+          "title": "Miscellaneous Manufacturing Industries"
+        },
+        {
+          "id": 4011,
+          "title": "Railroads, Line-Haul Operating"
+        },
+        {
+          "id": 4013,
+          "title": "Railroad Switching & Terminal Establishments"
+        },
+        {
+          "id": 4100,
+          "title": "Local & Suburban Transit & Interurban Hwy Passenger Trans"
+        },
+        {
+          "id": 4210,
+          "title": "Trucking & Courier Services (No Air)"
+        },
+        {
+          "id": 4213,
+          "title": "Trucking (No Local)"
+        },
+        {
+          "id": 4220,
+          "title": "Public Warehousing & Storage"
+        },
+        {
+          "id": 4231,
+          "title": "Terminal Maintenance Facilities For Motor Freight Transport"
+        },
+        {
+          "id": 4400,
+          "title": "Water Transportation"
+        },
+        {
+          "id": 4412,
+          "title": "Deep Sea Foreign Transportation of Freight"
+        },
+        {
+          "id": 4512,
+          "title": "Air Transportation, Scheduled"
+        },
+        {
+          "id": 4513,
+          "title": "Air Courier Services"
+        },
+        {
+          "id": 4522,
+          "title": "Air Transportation, Nonscheduled"
+        },
+        {
+          "id": 4581,
+          "title": "Airports, Flying Fields & Airport Terminal Services"
+        },
+        {
+          "id": 4610,
+          "title": "Pipe Lines (No Natural Gas)"
+        },
+        {
+          "id": 4700,
+          "title": "Transportation Services"
+        },
+        {
+          "id": 4731,
+          "title": "Arrangement of Transportation of Freight & Cargo"
+        },
+        {
+          "id": 4812,
+          "title": "Radiotelephone Communications"
+        },
+        {
+          "id": 4813,
+          "title": "Telephone Communications (No Radiotelephone)"
+        },
+        {
+          "id": 4822,
+          "title": "Telegraph & Other Message Communications"
+        },
+        {
+          "id": 4832,
+          "title": "Radio Broadcasting Stations"
+        },
+        {
+          "id": 4833,
+          "title": "Television Broadcasting Stations"
+        },
+        {
+          "id": 4841,
+          "title": "Cable & Other Pay Television Services"
+        },
+        {
+          "id": 4899,
+          "title": "Communications Services, NEC"
+        },
+        {
+          "id": 4900,
+          "title": "Electric, Gas & Sanitary Services"
+        },
+        {
+          "id": 4911,
+          "title": "Electric Services"
+        },
+        {
+          "id": 4922,
+          "title": "Natural Gas Transmission"
+        },
+        {
+          "id": 4923,
+          "title": "Natural Gas Transmission & Distribution"
+        },
+        {
+          "id": 4924,
+          "title": "Natural Gas Distribution"
+        },
+        {
+          "id": 4931,
+          "title": "Electric & Other Services Combined"
+        },
+        {
+          "id": 4932,
+          "title": "Gas & Other Services Combined"
+        },
+        {
+          "id": 4941,
+          "title": "Water Supply"
+        },
+        {
+          "id": 4950,
+          "title": "Sanitary Services"
+        },
+        {
+          "id": 4953,
+          "title": "Refuse Systems"
+        },
+        {
+          "id": 4955,
+          "title": "Hazardous Waste Management"
+        },
+        {
+          "id": 4961,
+          "title": "Steam & Air-Conditioning Supply"
+        },
+        {
+          "id": 4991,
+          "title": "Co-generation Services & Small Power Producers"
+        },
+        {
+          "id": 5000,
+          "title": "Wholesale-Durable Goods"
+        },
+        {
+          "id": 5010,
+          "title": "Wholesale-Motor Vehicles & Motor Vehicle Parts & Supplies"
+        },
+        {
+          "id": 5013,
+          "title": "Wholesale-Motor Vehicle Supplies & New Parts"
+        },
+        {
+          "id": 5020,
+          "title": "Wholesale-Furniture & Home Furnishings"
+        },
+        {
+          "id": 5030,
+          "title": "Wholesale-Lumber & Other Construction Materials"
+        },
+        {
+          "id": 5031,
+          "title": "Wholesale-Lumber, Plywood, millwork & Wood Panels"
+        },
+        {
+          "id": 5040,
+          "title": "Wholesale-Professional & Commercial Equipment & Supplies"
+        },
+        {
+          "id": 5045,
+          "title": "Wholesale-Computers & Peripheral Equipment & Software"
+        },
+        {
+          "id": 5047,
+          "title": "Wholesale-Medical, Dental & Hospital Equipment & Supplies"
+        },
+        {
+          "id": 5050,
+          "title": "Wholesale-Metals & Minerals (No Petroleum)"
+        },
+        {
+          "id": 5051,
+          "title": "Wholesale-Metals Service Centers & Offices"
+        },
+        {
+          "id": 5063,
+          "title": "Wholesale-Electrical Apparatus & Equipment, Wiring Supplies"
+        },
+        {
+          "id": 5064,
+          "title": "Wholesale-Electrical Appliances, TV & Radio Sets"
+        },
+        {
+          "id": 5065,
+          "title": "Wholesale-Electronic Parts & Equipment, NEC"
+        },
+        {
+          "id": 5070,
+          "title": "Wholesale-Hardware & Plumbing & Heating Equipment & Supplies"
+        },
+        {
+          "id": 5072,
+          "title": "Wholesale-Hardware"
+        },
+        {
+          "id": 5080,
+          "title": "Wholesale-Machinery, Equipment & Supplies"
+        },
+        {
+          "id": 5082,
+          "title": "Wholesale-Construction & Mining (No Petro) Machinery & Equip"
+        },
+        {
+          "id": 5084,
+          "title": "Wholesale-Industrial Machinery & Equipment"
+        },
+        {
+          "id": 5090,
+          "title": "Wholesale-Misc Durable Goods"
+        },
+        {
+          "id": 5094,
+          "title": "Wholesale-Jewelry, Watches, Precious Stones & Metals"
+        },
+        {
+          "id": 5099,
+          "title": "Wholesale-Durable Goods, NEC"
+        },
+        {
+          "id": 5110,
+          "title": "Wholesale-Paper & Paper Products"
+        },
+        {
+          "id": 5122,
+          "title": "Wholesale-Drugs, Proprietaries & Druggists' Sundries"
+        },
+        {
+          "id": 5130,
+          "title": "Wholesale-Apparel, Piece Goods & Notions"
+        },
+        {
+          "id": 5140,
+          "title": "Wholesale-Groceries & Related Products"
+        },
+        {
+          "id": 5141,
+          "title": "Wholesale-Groceries, General Line (merchandise)"
+        },
+        {
+          "id": 5150,
+          "title": "Wholesale-Farm Product Raw Materials"
+        },
+        {
+          "id": 5160,
+          "title": "Wholesale-Chemicals & Allied Products"
+        },
+        {
+          "id": 5171,
+          "title": "Wholesale-Petroleum Bulk Stations & Terminals"
+        },
+        {
+          "id": 5172,
+          "title": "Wholesale-Petroleum & Petroleum Products (No Bulk Stations)"
+        },
+        {
+          "id": 5180,
+          "title": "Wholesale-Beer, Wine & Distilled Alcoholic Beverages"
+        },
+        {
+          "id": 5190,
+          "title": "Wholesale-Miscellaneous Non-durable Goods"
+        },
+        {
+          "id": 5200,
+          "title": "Retail-Building Materials, Hardware, Garden Supply"
+        },
+        {
+          "id": 5211,
+          "title": "Retail-Lumber & Other Building Materials Dealers"
+        },
+        {
+          "id": 5271,
+          "title": "Retail-Mobile Home Dealers"
+        },
+        {
+          "id": 5311,
+          "title": "Retail-Department Stores"
+        },
+        {
+          "id": 5331,
+          "title": "Retail-Variety Stores"
+        },
+        {
+          "id": 5399,
+          "title": "Retail-Misc General Merchandise Stores"
+        },
+        {
+          "id": 5400,
+          "title": "Retail-Food Stores"
+        },
+        {
+          "id": 5411,
+          "title": "Retail-Grocery Stores"
+        },
+        {
+          "id": 5412,
+          "title": "Retail-Convenience Stores"
+        },
+        {
+          "id": 5500,
+          "title": "Retail-Auto Dealers & Gasoline Stations"
+        },
+        {
+          "id": 5531,
+          "title": "Retail-Auto & Home Supply Stores"
+        },
+        {
+          "id": 5551,
+          "title": "Boat Dealers"
+        },
+        {
+          "id": 5600,
+          "title": "Retail-Apparel & Accessory Stores"
+        },
+        {
+          "id": 5621,
+          "title": "Retail-Women's Clothing Stores"
+        },
+        {
+          "id": 5651,
+          "title": "Retail-Family Clothing Stores"
+        },
+        {
+          "id": 5661,
+          "title": "Retail-Shoe Stores"
+        },
+        {
+          "id": 5700,
+          "title": "Retail-Home Furniture, Furnishings & Equipment Stores"
+        },
+        {
+          "id": 5712,
+          "title": "Retail-Furniture Stores"
+        },
+        {
+          "id": 5731,
+          "title": "Retail-Radio, TV & Consumer Electronics Stores"
+        },
+        {
+          "id": 5734,
+          "title": "Retail-Computer & Computer Software Stores"
+        },
+        {
+          "id": 5735,
+          "title": "Retail-Record & Prerecorded Tape Stores"
+        },
+        {
+          "id": 5810,
+          "title": "Retail-Eating & Drinking Places"
+        },
+        {
+          "id": 5812,
+          "title": "Retail-Eating Places"
+        },
+        {
+          "id": 5900,
+          "title": "Retail-Miscellaneous Retail"
+        },
+        {
+          "id": 5912,
+          "title": "Retail-Drug Stores and Proprietary Stores"
+        },
+        {
+          "id": 5940,
+          "title": "Retail-Miscellaneous Shopping Goods Stores"
+        },
+        {
+          "id": 5944,
+          "title": "Retail-Jewelry Stores"
+        },
+        {
+          "id": 5945,
+          "title": "Retail-Hobby, Toy & Game Shops"
+        },
+        {
+          "id": 5960,
+          "title": "Retail-Nonstore Retailers"
+        },
+        {
+          "id": 5961,
+          "title": "Retail-Catalog & Mail-Order Houses"
+        },
+        {
+          "id": 5990,
+          "title": "Retail-Retail Stores, NEC"
+        },
+        {
+          "id": 6012,
+          "title": "Pay Day Lenders"
+        },
+        {
+          "id": 6021,
+          "title": "National Commercial Banks"
+        },
+        {
+          "id": 6022,
+          "title": "State Commercial Banks"
+        },
+        {
+          "id": 6029,
+          "title": "Commercial Banks, NEC"
+        },
+        {
+          "id": 6035,
+          "title": "Savings Institution, Federally Chartered"
+        },
+        {
+          "id": 6036,
+          "title": "Savings Institutions, Not Federally Chartered"
+        },
+        {
+          "id": 6099,
+          "title": "Functions Related To Depository Banking, NEC"
+        },
+        {
+          "id": 6111,
+          "title": "Federal & Federally Sponsored Credit Agencies"
+        },
+        {
+          "id": 6141,
+          "title": "Personal Credit Institutions"
+        },
+        {
+          "id": 6153,
+          "title": "Short-Term Business Credit Institutions"
+        },
+        {
+          "id": 6159,
+          "title": "Miscellaneous Business Credit Institution"
+        },
+        {
+          "id": 6162,
+          "title": "Mortgage Bankers & Loan Correspondents"
+        },
+        {
+          "id": 6163,
+          "title": "Loan Brokers"
+        },
+        {
+          "id": 6172,
+          "title": "Finance Lessors"
+        },
+        {
+          "id": 6189,
+          "title": "Asset-Backed Securities"
+        },
+        {
+          "id": 6199,
+          "title": "Finance Services"
+        },
+        {
+          "id": 6200,
+          "title": "Security & Commodity Brokers, Dealers, Exchanges & Services"
+        },
+        {
+          "id": 6211,
+          "title": "Security Brokers, Dealers & Flotation Companies"
+        },
+        {
+          "id": 6221,
+          "title": "Commodity Contracts Brokers & Dealers"
+        },
+        {
+          "id": 6282,
+          "title": "Investment Advice"
+        },
+        {
+          "id": 6311,
+          "title": "Life Insurance"
+        },
+        {
+          "id": 6321,
+          "title": "Accident & Health Insurance"
+        },
+        {
+          "id": 6324,
+          "title": "Hospital & Medical Service Plans"
+        },
+        {
+          "id": 6331,
+          "title": "Fire, Marine & Casualty Insurance"
+        },
+        {
+          "id": 6351,
+          "title": "Surety Insurance"
+        },
+        {
+          "id": 6361,
+          "title": "Title Insurance"
+        },
+        {
+          "id": 6399,
+          "title": "Insurance Carriers, NEC"
+        },
+        {
+          "id": 6411,
+          "title": "Insurance Agents, Brokers & Service"
+        },
+        {
+          "id": 6500,
+          "title": "Real Estate"
+        },
+        {
+          "id": 6510,
+          "title": "Real Estate Operators (No Developers) & Lessors"
+        },
+        {
+          "id": 6512,
+          "title": "Operators of Nonresidential Buildings"
+        },
+        {
+          "id": 6513,
+          "title": "Operators of Apartment Buildings"
+        },
+        {
+          "id": 6519,
+          "title": "Lessors of Real Property, NEC"
+        },
+        {
+          "id": 6531,
+          "title": "Real Estate Agents & Managers (For Others)"
+        },
+        {
+          "id": 6532,
+          "title": "Real Estate Dealers (For Their Own Account)"
+        },
+        {
+          "id": 6552,
+          "title": "Land Subdividers & Developers (No Cemeteries)"
+        },
+        {
+          "id": 6770,
+          "title": "Blank Checks"
+        },
+        {
+          "id": 6792,
+          "title": "Oil Royalty Traders"
+        },
+        {
+          "id": 6794,
+          "title": "Patent Owners & Lessors"
+        },
+        {
+          "id": 6795,
+          "title": "Mineral Royalty Traders"
+        },
+        {
+          "id": 6798,
+          "title": "Real Estate Investment Trusts"
+        },
+        {
+          "id": 6799,
+          "title": "Investors, NEC"
+        },
+        {
+          "id": 7000,
+          "title": "Hotels, Rooming Houses, Camps & Other Lodging Places"
+        },
+        {
+          "id": 7011,
+          "title": "Hotels & Motels"
+        },
+        {
+          "id": 7200,
+          "title": "Services-Personal Services"
+        },
+        {
+          "id": 7310,
+          "title": "Services-Advertising"
+        },
+        {
+          "id": 7311,
+          "title": "Services-Advertising Agencies"
+        },
+        {
+          "id": 7320,
+          "title": "Services-Consumer Credit Reporting, Collection Agencies"
+        },
+        {
+          "id": 7330,
+          "title": "Services-Mailing, Reproduction, Commercial Art & Photography"
+        },
+        {
+          "id": 7331,
+          "title": "Services-Direct Mail Advertising Services"
+        },
+        {
+          "id": 7334,
+          "title": "Services-Photocopying and Duplicating Services"
+        },
+        {
+          "id": 7340,
+          "title": "Services-To Dwellings & Other Buildings"
+        },
+        {
+          "id": 7350,
+          "title": "Services-Miscellaneous Equipment Rental & Leasing"
+        },
+        {
+          "id": 7359,
+          "title": "Services-Equipment Rental & Leasing, NEC"
+        },
+        {
+          "id": 7361,
+          "title": "Services-Employment Agencies"
+        },
+        {
+          "id": 7363,
+          "title": "Services-Help Supply Services"
+        },
+        {
+          "id": 7370,
+          "title": "Services-Computer Programming, Data Processing, Etc."
+        },
+        {
+          "id": 7371,
+          "title": "Services-Computer Programming Services"
+        },
+        {
+          "id": 7372,
+          "title": "Services-Prepackaged Software"
+        },
+        {
+          "id": 7373,
+          "title": "Services-Computer Integrated Systems Design"
+        },
+        {
+          "id": 7374,
+          "title": "Services-Computer Processing & Data Preparation"
+        },
+        {
+          "id": 7377,
+          "title": "Services-Computer Rental & Leasing"
+        },
+        {
+          "id": 7380,
+          "title": "Services-Miscellaneous Business Services"
+        },
+        {
+          "id": 7381,
+          "title": "Services-Detective, Guard & Armored Car Services"
+        },
+        {
+          "id": 7384,
+          "title": "Services-Photofinishing Laboratories"
+        },
+        {
+          "id": 7385,
+          "title": "Services-Telephone Interconnect Systems"
+        },
+        {
+          "id": 7389,
+          "title": "Services-Business Services, NEC"
+        },
+        {
+          "id": 7500,
+          "title": "Services-Automotive Repair, Services & Parking"
+        },
+        {
+          "id": 7510,
+          "title": "Services-Auto Rental & Leasing (No Drivers)"
+        },
+        {
+          "id": 7600,
+          "title": "Services-Miscellaneous Repair Services"
+        },
+        {
+          "id": 7812,
+          "title": "Services-Motion Picture & Video Tape Production"
+        },
+        {
+          "id": 7819,
+          "title": "Services-Allied To Motion Picture Production"
+        },
+        {
+          "id": 7822,
+          "title": "Services-Motion Picture & Video Tape Distribution"
+        },
+        {
+          "id": 7829,
+          "title": "Services-Allied To Motion Picture Distribution"
+        },
+        {
+          "id": 7830,
+          "title": "Services-Motion Picture Theaters"
+        },
+        {
+          "id": 7841,
+          "title": "Services-Video Tape Rental"
+        },
+        {
+          "id": 7900,
+          "title": "Services-Amusement & Recreation Services"
+        },
+        {
+          "id": 7948,
+          "title": "Services-Racing, Including Track Operation"
+        },
+        {
+          "id": 7990,
+          "title": "Services-Miscellaneous Amusement & Recreation"
+        },
+        {
+          "id": 7994,
+          "title": "Services-Video Game Arcades"
+        },
+        {
+          "id": 7995,
+          "title": "Services-Gambling Transactions"
+        },
+        {
+          "id": 7996,
+          "title": "Services-Amusement Parks"
+        },
+        {
+          "id": 7997,
+          "title": "Services-Membership Sports & Recreation Clubs"
+        },
+        {
+          "id": 8000,
+          "title": "Services-Health Services"
+        },
+        {
+          "id": 8011,
+          "title": "Services-Offices & Clinics of Doctors of Medicine"
+        },
+        {
+          "id": 8050,
+          "title": "Services-Nursing & Personal Care Facilities"
+        },
+        {
+          "id": 8051,
+          "title": "Services-Skilled Nursing Care Facilities"
+        },
+        {
+          "id": 8060,
+          "title": "Services-Hospitals"
+        },
+        {
+          "id": 8062,
+          "title": "Services-General Medical & Surgical Hospitals, NEC"
+        },
+        {
+          "id": 8071,
+          "title": "Services-Medical Laboratories"
+        },
+        {
+          "id": 8082,
+          "title": "Services-Home Health Care Services"
+        },
+        {
+          "id": 8090,
+          "title": "Services-Misc Health & Allied Services, NEC"
+        },
+        {
+          "id": 8093,
+          "title": "Services-Specialty Outpatient Facilities, NEC"
+        },
+        {
+          "id": 8111,
+          "title": "Services-Legal Services"
+        },
+        {
+          "id": 8200,
+          "title": "Services-Educational Services"
+        },
+        {
+          "id": 8300,
+          "title": "Services-Social Services"
+        },
+        {
+          "id": 8351,
+          "title": "Services-Child Day Care Services"
+        },
+        {
+          "id": 8600,
+          "title": "Services-Membership organizations"
+        },
+        {
+          "id": 8700,
+          "title": "Services-Engineering, Accounting, Research, Management"
+        },
+        {
+          "id": 8711,
+          "title": "Services-Engineering Services"
+        },
+        {
+          "id": 8731,
+          "title": "Services-Commercial Physical & Biological Research"
+        },
+        {
+          "id": 8734,
+          "title": "Services-Testing Laboratories"
+        },
+        {
+          "id": 8741,
+          "title": "Services-Management Services"
+        },
+        {
+          "id": 8742,
+          "title": "Services-Management Consulting Services"
+        },
+        {
+          "id": 8744,
+          "title": "Services-Facilities Support Management Services"
+        },
+        {
+          "id": 8748,
+          "title": "Business Consulting Services, Not Elsewhere Classified"
+        },
+        {
+          "id": 8880,
+          "title": "American Depositary Receipts"
+        },
+        {
+          "id": 8888,
+          "title": "Foreign Governments"
+        },
+        {
+          "id": 8900,
+          "title": "Services-Services, NEC"
+        },
+        {
+          "id": 9721,
+          "title": "International Affairs"
+        },
+        {
+          "id": 9995,
+          "title": "Non-Operating Establishments"
+        }
+      ]
+    }
+  ]
+}
