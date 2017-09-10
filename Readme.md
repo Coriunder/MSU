@@ -1,5 +1,11 @@
 Introduction to MSU 
 
+MSU means Merchant Sign Up - this is a little project we created to help our clients onboard merchant into their backend system, the JS is simple - create a form and connect it to the fields allowed in the service. 
+
+The tool allows you to decide which fields are mandatory or not in the JSON file.
+
+Mobile versions of this project will be published soon. 
+
 ## CSS
 You will need to add the following references to the head of your page
 
@@ -143,7 +149,7 @@ This is an example of a form that includes the minimum fields for a lead signup 
 
 
 ## Modal dialog
-    This is an example of the validation popup modal you can add to your screen - design it to fit your site's design
+This is an example of the validation popup modal you can add to your screen - design it to fit your site's design
 
 ```  
     <!--modal validation-->
