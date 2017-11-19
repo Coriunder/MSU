@@ -127,6 +127,19 @@ var msu_app = function () {
         msu_utils.setContent(msu_utils.inputTitle(msu_res.data.typeofbusiness.id), msu_res.langData.typeofbusiness.title);
         msu_utils.setContent(msu_utils.inputDesc(msu_res.data.typeofbusiness.id), msu_res.langData.typeofbusiness.desc);
 
+        // Type of Account
+        if ($("#" + msu_utils.inputId(msu_res.data.typeofaccount.id))) {
+            var typeofaccountOptions = '';
+            typeofaccountOptions += '<option value="0">--Select--</option>';
+            for (var counter2 = 0; counter2 < msu_res.langData.typeofaccount.length; counter2++) {
+                typeofaccountOptions += '<option value="' + msu_res.langData.typeofaccount[counter2].id + '">' + msu_res.langData.typeofaccount[counter2].title + '</option>';
+            }
+            $("#" + msu_utils.inputId(msu_res.data.typeofaccount.id)).append(typeofaccountOptions);
+        }
+
+        msu_utils.setContent(msu_utils.inputTitle(msu_res.data.typeofaccount.id), msu_res.langData.typeofaccount.title);
+        msu_utils.setContent(msu_utils.inputDesc(msu_res.data.typeofaccount.id), msu_res.langData.typeofaccount.desc);
+
         // Business industry
         if ($("#" + msu_utils.inputId(msu_res.data.businessindustry.id))) {
             var businessIndustryOptions = '';
@@ -195,6 +208,22 @@ var msu_app = function () {
         // Percent delivery over 30
         msu_utils.setContent(msu_utils.inputTitle(msu_res.data.percentdeliveryover30.id), msu_res.langData.percentdeliveryover30.title);
         msu_utils.setContent(msu_utils.inputDesc(msu_res.data.percentdeliveryover30.id), msu_res.langData.percentdeliveryover30.desc);
+
+        // Source
+        msu_utils.setContent(msu_utils.inputTitle(msu_res.data.source.id), msu_res.langData.source.title);
+        msu_utils.setContent(msu_utils.inputDesc(msu_res.data.source.id), msu_res.langData.source.desc);
+        
+        // AccountManager
+        msu_utils.setContent(msu_utils.inputTitle(msu_res.data.AccountManager.id), msu_res.langData.AccountManager.title);
+        msu_utils.setContent(msu_utils.inputDesc(msu_res.data.AccountManager.id), msu_res.langData.AccountManager.desc);
+
+        // ParentCompany
+        msu_utils.setContent(msu_utils.inputTitle(msu_res.data.ParentCompany.id), msu_res.langData.ParentCompany.title);
+        msu_utils.setContent(msu_utils.inputDesc(msu_res.data.ParentCompany.id), msu_res.langData.ParentCompany.desc);
+
+        // AccountType
+        msu_utils.setContent(msu_utils.inputTitle(msu_res.data.AccountType.id), msu_res.langData.AccountType.title);
+        msu_utils.setContent(msu_utils.inputDesc(msu_res.data.AccountType.id), msu_res.langData.AccountType.desc);
     }
 
     function submitInternal() {
@@ -970,6 +999,10 @@ var msu_res = function () {
             PhisicalCity: "",
             PhisicalState: "",
             PhisicalZip: "",
+            AccountType: 0, // (decimal)
+            AccountManager: 0, // (decimal)
+            source: "",
+            ParentCompany: 0, // (decimal)
             BankAccountNumber: "",
             BankRoutingNumber: "",
             CanceledCheckImage: "", // (base64Binary)
@@ -1018,6 +1051,10 @@ var msu_res = function () {
             postModel.RegistrationData.PhisicalCity = "";
             postModel.RegistrationData.PhisicalState = "";
             postModel.RegistrationData.PhisicalZip = "";
+            postModel.RegistrationData.source = "";
+            postModel.RegistrationData.AccountType = 0;
+            postModel.RegistrationData.AccountManager = 0;
+            postModel.RegistrationData.ParentCompany = 0;
             postModel.RegistrationData.BankAccountNumber = "";
             postModel.RegistrationData.BankRoutingNumber = "";
             postModel.RegistrationData.CanceledCheckImage = "";

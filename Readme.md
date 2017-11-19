@@ -68,6 +68,11 @@ there is no need to change anything in the JS to make the little function work -
         }
     </script>
 ```
+
+##Changelog
+
+19.11.2017 - Added Source/Account Manager/Account type/Parent company - use it to send additional fields to filter better your leads.
+
 ## Sample of html 
 
 This is an example of a form that includes the minimum fields for a lead signup - you can start from this form and add any field that you like from the JSON file.

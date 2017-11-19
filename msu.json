@@ -142,9 +142,45 @@
     "id": "percentdeliveryover30",
     "validate": false
   },
+  "TypeOfAccount": {
+    "id": "TypeOfAccount",
+    "validate": false
+  },
+  "Source": {
+    "id": "Source",
+    "validate": false
+  },
+  "AccountManager": {
+    "id": "AccountManager",
+    "validate": false
+  },
+  "ParentCompany": {
+    "id": "ParentCompany",
+    "validate": false
+  },
   "assets": [
     {
       "lang": "en",
+      "TypeOfAccount": {
+        "title": "Type Of Account",
+        "desc": "Choose the type of account from: Merchant/Provider/Affiliate/Application",
+        "val": "Input type of account is empty or invalid"
+      },
+      "Source": {
+        "title": "Source",
+        "desc": "The source field is used to identify the source of the lead, use it as a UTM.",
+        "val": "Input Source is empty or invalid"
+      },
+      "AccountManager": {
+        "title": "Account Manager",
+        "desc": "Each member of your team will receive an account ID - send it to allocate the lead to the account manager",
+        "val": "Input Account manager is empty or invalid"
+      },
+      "ParentCompany": {
+        "title": "Parent Company",
+        "desc": "Parent company is used to group merchants under one identity, you will need to send the Parent company id as part of the request.",
+        "val": "Input Parent Company is empty or invalid"
+      },
       "fname": {
         "title": "First Name",
         "desc": "Enter your first name",
@@ -371,6 +407,24 @@
         {
           "id": 1,
           "title": "Sole Proprietor"
+        }
+      ],
+      "typeofaccount": [
+        {
+          "id": 1,
+          "title": "Merchant"
+        },
+        {
+          "id": 2,
+          "title": "Affiliate"
+        },
+        {
+          "id": 3,
+          "title": "Application"
+        },
+        {
+          "id": 4,
+          "title": "Provider"
         }
       ],
       "indopts": [
