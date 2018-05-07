@@ -98,6 +98,22 @@ var msu_app = function () {
         msu_utils.setContent(msu_utils.inputTitle(msu_res.data.dbaname.id), msu_res.langData.dbaname.title);
         msu_utils.setContent(msu_utils.inputDesc(msu_res.data.dbaname.id), msu_res.langData.dbaname.desc);
 
+        // AccountType
+        msu_utils.setContent(msu_utils.inputTitle(msu_res.data.accounttype.id), msu_res.langData.accounttype.title);
+        msu_utils.setContent(msu_utils.inputDesc(msu_res.data.accounttype.id), msu_res.langData.accounttype.desc);
+
+        // Source
+        msu_utils.setContent(msu_utils.inputTitle(msu_res.data.source.id), msu_res.langData.source.title);
+        msu_utils.setContent(msu_utils.inputDesc(msu_res.data.source.id), msu_res.langData.source.desc);
+
+        // ParentCompany
+        msu_utils.setContent(msu_utils.inputTitle(msu_res.data.parentcompany.id), msu_res.langData.parentcompany.title);
+        msu_utils.setContent(msu_utils.inputDesc(msu_res.data.parentcompany.id), msu_res.langData.parentcompany.desc);
+
+        // AccountManager
+        msu_utils.setContent(msu_utils.inputTitle(msu_res.data.accountmanager.id), msu_res.langData.accountmanager.title);
+        msu_utils.setContent(msu_utils.inputDesc(msu_res.data.accountmanager.id), msu_res.langData.accountmanager.desc);
+
         // Owner DOB
         msu_utils.setContent(msu_utils.inputTitle(msu_res.data.ownerdob.id), msu_res.langData.ownerdob.title);
         msu_utils.setContent(msu_utils.inputDesc(msu_res.data.ownerdob.id), msu_res.langData.ownerdob.desc);
@@ -126,19 +142,6 @@ var msu_app = function () {
 
         msu_utils.setContent(msu_utils.inputTitle(msu_res.data.typeofbusiness.id), msu_res.langData.typeofbusiness.title);
         msu_utils.setContent(msu_utils.inputDesc(msu_res.data.typeofbusiness.id), msu_res.langData.typeofbusiness.desc);
-
-        // Type of Account
-        if ($("#" + msu_utils.inputId(msu_res.data.typeofaccount.id))) {
-            var typeofaccountOptions = '';
-            typeofaccountOptions += '<option value="0">--Select--</option>';
-            for (var counter2 = 0; counter2 < msu_res.langData.typeofaccount.length; counter2++) {
-                typeofaccountOptions += '<option value="' + msu_res.langData.typeofaccount[counter2].id + '">' + msu_res.langData.typeofaccount[counter2].title + '</option>';
-            }
-            $("#" + msu_utils.inputId(msu_res.data.typeofaccount.id)).append(typeofaccountOptions);
-        }
-
-        msu_utils.setContent(msu_utils.inputTitle(msu_res.data.typeofaccount.id), msu_res.langData.typeofaccount.title);
-        msu_utils.setContent(msu_utils.inputDesc(msu_res.data.typeofaccount.id), msu_res.langData.typeofaccount.desc);
 
         // Business industry
         if ($("#" + msu_utils.inputId(msu_res.data.businessindustry.id))) {
@@ -208,22 +211,6 @@ var msu_app = function () {
         // Percent delivery over 30
         msu_utils.setContent(msu_utils.inputTitle(msu_res.data.percentdeliveryover30.id), msu_res.langData.percentdeliveryover30.title);
         msu_utils.setContent(msu_utils.inputDesc(msu_res.data.percentdeliveryover30.id), msu_res.langData.percentdeliveryover30.desc);
-
-        // Source
-        msu_utils.setContent(msu_utils.inputTitle(msu_res.data.source.id), msu_res.langData.source.title);
-        msu_utils.setContent(msu_utils.inputDesc(msu_res.data.source.id), msu_res.langData.source.desc);
-        
-        // AccountManager
-        msu_utils.setContent(msu_utils.inputTitle(msu_res.data.AccountManager.id), msu_res.langData.AccountManager.title);
-        msu_utils.setContent(msu_utils.inputDesc(msu_res.data.AccountManager.id), msu_res.langData.AccountManager.desc);
-
-        // ParentCompany
-        msu_utils.setContent(msu_utils.inputTitle(msu_res.data.ParentCompany.id), msu_res.langData.ParentCompany.title);
-        msu_utils.setContent(msu_utils.inputDesc(msu_res.data.ParentCompany.id), msu_res.langData.ParentCompany.desc);
-
-        // AccountType
-        msu_utils.setContent(msu_utils.inputTitle(msu_res.data.AccountType.id), msu_res.langData.AccountType.title);
-        msu_utils.setContent(msu_utils.inputDesc(msu_res.data.AccountType.id), msu_res.langData.AccountType.desc);
     }
 
     function submitInternal() {
@@ -522,6 +509,74 @@ var msu_app = function () {
                 }
                 else {
                     msu_res.postModel.RegistrationData.DbaName = dbanameRaw;
+                }
+            }
+
+            // Check for AccountType
+            if ($("#" + msu_utils.inputId(msu_res.data.accounttype.id))) {
+                var accounttypeRaw = $("#" + msu_utils.inputId(msu_res.data.accounttype.id)).val();
+                if (msu_res.data.accounttype.validate) {
+                    if (!accounttypeRaw) {
+                        msu_res.valSum.push(msu_res.langData.accounttype.val);
+                        msu_res.conf.isValFail = true;
+                    }
+                    else {
+                        msu_res.postModel.RegistrationData.accounttype = accounttypeRaw;
+                    }
+                }
+                else {
+                    msu_res.postModel.RegistrationData.accounttype = accounttypeRaw;
+                }
+            }
+
+            // Check for ParentCompany
+            if ($("#" + msu_utils.inputId(msu_res.data.parentcompany.id))) {
+                var parentcompanyRaw = $("#" + msu_utils.inputId(msu_res.data.parentcompany.id)).val();
+                if (msu_res.data.parentcompany.validate) {
+                    if (!parentcompanyRaw) {
+                        msu_res.valSum.push(msu_res.langData.parentcompany.val);
+                        msu_res.conf.isValFail = true;
+                    }
+                    else {
+                        msu_res.postModel.RegistrationData.parentcompany = parentcompanyRaw;
+                    }
+                }
+                else {
+                    msu_res.postModel.RegistrationData.parentcompany = parentcompanyRaw;
+                }
+            }
+
+            // Check for AccountManager
+            if ($("#" + msu_utils.inputId(msu_res.data.accountmanager.id))) {
+                var accountmanagerRaw = $("#" + msu_utils.inputId(msu_res.data.accountmanager.id)).val();
+                if (msu_res.data.accountmanager.validate) {
+                    if (!accountmanagerRaw) {
+                        msu_res.valSum.push(msu_res.langData.accountmanager.val);
+                        msu_res.conf.isValFail = true;
+                    }
+                    else {
+                        msu_res.postModel.RegistrationData.accountmanager = accountmanagerRaw;
+                    }
+                }
+                else {
+                    msu_res.postModel.RegistrationData.accountmanager = accountmanagerRaw;
+                }
+            }
+
+            // Check for Source.
+            if ($("#" + msu_utils.inputId(msu_res.data.source.id))) {
+                var sourceRaw = $("#" + msu_utils.inputId(msu_res.data.source.id)).val();
+                if (msu_res.data.source.validate) {
+                    if (!sourceRaw) {
+                        msu_res.valSum.push(msu_res.langData.source.val);
+                        msu_res.conf.isValFail = true;
+                    }
+                    else {
+                        msu_res.postModel.RegistrationData.source = sourceRaw;
+                    }
+                }
+                else {
+                    msu_res.postModel.RegistrationData.source = sourceRaw;
                 }
             }
 
@@ -989,6 +1044,10 @@ var msu_res = function () {
             BusinessDescription: "",
             BusinessStartDate: new Date(),
             DbaName: "",
+            Source: "",
+            AccountType: "",
+            ParentCompany: "",
+            AccountManager: "",
             OwnerDob: new Date(),
             OwnerSsn: "",
             Url: "",
@@ -999,10 +1058,6 @@ var msu_res = function () {
             PhisicalCity: "",
             PhisicalState: "",
             PhisicalZip: "",
-            AccountType: 0, // (decimal)
-            AccountManager: 0, // (decimal)
-            source: "",
-            ParentCompany: 0, // (decimal)
             BankAccountNumber: "",
             BankRoutingNumber: "",
             CanceledCheckImage: "", // (base64Binary)
@@ -1041,6 +1096,10 @@ var msu_res = function () {
             postModel.RegistrationData.BusinessDescription = "";
             postModel.RegistrationData.BusinessStartDate = new Date();
             postModel.RegistrationData.DbaName = "";
+            postModel.RegistrationData.Source = "";
+            postModel.RegistrationData.AccountType = "";
+            postModel.RegistrationData.ParentCompany = ""; 
+            postModel.RegistrationData.AccountManager = ""; 
             postModel.RegistrationData.OwnerDob = new Date();
             postModel.RegistrationData.OwnerSsn = "";
             postModel.RegistrationData.Url = "";
@@ -1051,10 +1110,6 @@ var msu_res = function () {
             postModel.RegistrationData.PhisicalCity = "";
             postModel.RegistrationData.PhisicalState = "";
             postModel.RegistrationData.PhisicalZip = "";
-            postModel.RegistrationData.source = "";
-            postModel.RegistrationData.AccountType = 0;
-            postModel.RegistrationData.AccountManager = 0;
-            postModel.RegistrationData.ParentCompany = 0;
             postModel.RegistrationData.BankAccountNumber = "";
             postModel.RegistrationData.BankRoutingNumber = "";
             postModel.RegistrationData.CanceledCheckImage = "";
