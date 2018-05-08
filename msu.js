@@ -1,7 +1,7 @@
 "use strict";
 /****************************************************
 Plugin Module : MSU main module
-Last modified: 07/03/2017
+Last modified: 08/05/2018
 Author: Josh Daniel
 *****************************************************/
 var msu_app = function () {
@@ -228,7 +228,7 @@ var msu_app = function () {
             "data": JSON.stringify(msu_res.postModel)
         }
 
-        //console.log(JSON.stringify(msu_res.postModel));
+        console.log(JSON.stringify(msu_res.postModel));
 
         $.ajax(settings)
             .done(function (response) {
@@ -511,8 +511,8 @@ var msu_app = function () {
                     msu_res.postModel.RegistrationData.DbaName = dbanameRaw;
                 }
             }
-
-            // Check for AccountType
+			
+			// Check for AccountType
             if ($("#" + msu_utils.inputId(msu_res.data.accounttype.id))) {
                 var accounttypeRaw = $("#" + msu_utils.inputId(msu_res.data.accounttype.id)).val();
                 if (msu_res.data.accounttype.validate) {
@@ -521,14 +521,14 @@ var msu_app = function () {
                         msu_res.conf.isValFail = true;
                     }
                     else {
-                        msu_res.postModel.RegistrationData.accounttype = accounttypeRaw;
+                        msu_res.postModel.RegistrationData.AccountType = accounttypeRaw;
                     }
                 }
                 else {
-                    msu_res.postModel.RegistrationData.accounttype = accounttypeRaw;
+                    msu_res.postModel.RegistrationData.AccountType = accounttypeRaw;
                 }
             }
-
+            
             // Check for ParentCompany
             if ($("#" + msu_utils.inputId(msu_res.data.parentcompany.id))) {
                 var parentcompanyRaw = $("#" + msu_utils.inputId(msu_res.data.parentcompany.id)).val();
@@ -538,11 +538,11 @@ var msu_app = function () {
                         msu_res.conf.isValFail = true;
                     }
                     else {
-                        msu_res.postModel.RegistrationData.parentcompany = parentcompanyRaw;
+                        msu_res.postModel.RegistrationData.ParentCompany = parentcompanyRaw;
                     }
                 }
                 else {
-                    msu_res.postModel.RegistrationData.parentcompany = parentcompanyRaw;
+                    msu_res.postModel.RegistrationData.ParentCompany = parentcompanyRaw;
                 }
             }
 
@@ -555,11 +555,11 @@ var msu_app = function () {
                         msu_res.conf.isValFail = true;
                     }
                     else {
-                        msu_res.postModel.RegistrationData.accountmanager = accountmanagerRaw;
+                        msu_res.postModel.RegistrationData.AccountManager = accountmanagerRaw;
                     }
                 }
                 else {
-                    msu_res.postModel.RegistrationData.accountmanager = accountmanagerRaw;
+                    msu_res.postModel.RegistrationData.AccountManager = accountmanagerRaw;
                 }
             }
 
@@ -572,11 +572,11 @@ var msu_app = function () {
                         msu_res.conf.isValFail = true;
                     }
                     else {
-                        msu_res.postModel.RegistrationData.source = sourceRaw;
+                        msu_res.postModel.RegistrationData.Source = sourceRaw;
                     }
                 }
                 else {
-                    msu_res.postModel.RegistrationData.source = sourceRaw;
+                    msu_res.postModel.RegistrationData.Source = sourceRaw;
                 }
             }
 
@@ -1097,8 +1097,8 @@ var msu_res = function () {
             postModel.RegistrationData.BusinessStartDate = new Date();
             postModel.RegistrationData.DbaName = "";
             postModel.RegistrationData.Source = "";
-            postModel.RegistrationData.AccountType = "";
-            postModel.RegistrationData.ParentCompany = ""; 
+            postModel.RegistrationData.AccountType = -1;
+            postModel.RegistrationData.ParentCompany = -1; 
             postModel.RegistrationData.AccountManager = ""; 
             postModel.RegistrationData.OwnerDob = new Date();
             postModel.RegistrationData.OwnerSsn = "";
