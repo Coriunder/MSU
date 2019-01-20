@@ -70,7 +70,7 @@ there is no need to change anything in the JS to make the little function work -
 ```
 
 ##Changelog
-
+20.01.2019 - Added UBO support / Added Last 6 Month processing / Added additional contact details
 19.11.2017 - Added Source/Account Manager/Account type/Parent company - use it to send additional fields to filter better your leads.
 
 ## Sample of html 
